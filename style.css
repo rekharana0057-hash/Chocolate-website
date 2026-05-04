@@ -508,4 +508,9 @@ footer {
         grid-template-columns: 1fr !important;
         gap: 40px;
     }
+    #chat-container {
+        width: calc(100vw - 40px) !important;
+        height: 500px !important;
+        right: -10px !important;
+    }
 }

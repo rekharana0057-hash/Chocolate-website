@@ -310,6 +310,37 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Chatbot Toggle ---
+    const chatToggle = document.getElementById('chat-toggle');
+    const chatContainer = document.getElementById('chat-container');
+    const closeChat = document.getElementById('close-chat');
+
+    if (chatToggle && chatContainer) {
+        chatToggle.addEventListener('click', () => {
+            if (chatContainer.style.display === 'none' || chatContainer.style.display === '') {
+                chatContainer.style.display = 'block';
+                setTimeout(() => {
+                    chatContainer.style.opacity = '1';
+                    chatContainer.style.transform = 'translateY(0)';
+                }, 50);
+                chatToggle.innerHTML = '<i class="fa-solid fa-chevron-down" style="font-size: 1.5rem;"></i>';
+            } else {
+                closeChatWindow();
+            }
+        });
+
+        closeChat.addEventListener('click', closeChatWindow);
+
+        function closeChatWindow() {
+            chatContainer.style.opacity = '0';
+            chatContainer.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+                chatContainer.style.display = 'none';
+            }, 300);
+            chatToggle.innerHTML = '<i class="fa-solid fa-comment-dots" style="font-size: 1.5rem;"></i>';
+        }
+    }
+
     // --- Wishlist Interaction ---
     document.querySelectorAll('.add-to-wishlist').forEach(btn => {
         btn.addEventListener('click', () => {
