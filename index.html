@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crave Filler | Premium Luxury Chocolates</title>
+    <meta name="description" content="Indulge in the finest luxury chocolates. From dark cocoa to creamy truffles, Crave Filler brings you the ultimate sweetness experience.">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#shop" class="nav-link">Shop</a>
+                    <a href="#about" class="nav-link">About</a>
+                </div>
+
+                <a href="#home" class="logo">CRAVE FILLER</a>
+
+                <div class="nav-icons">
+                    <div class="nav-icon search-trigger"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="nav-icon wishlist-trigger"><i class="fa-regular fa-heart"></i></div>
+                    <div class="nav-icon cart-trigger">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="subtitle">EXPERIENCE PURE INDULGENCE</p>
+            <h1>Fill Your Cravings with Every Bite</h1>
+            <p>Handcrafted premium chocolates made from the finest cocoa beans sourced from around the world.</p>
+            <a href="#shop" class="btn btn-primary">Shop Collection</a>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="section" id="featured">
+        <div class="container">
+            <div class="section-title">
+                <p class="subtitle">Our Signature</p>
+                <h2>Featured Delights</h2>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="dark">
+                    <div class="product-image-container">
+                        <img src="bars.jpg" alt="Dark Midnight Bar" class="product-image">
+                        <div class="product-overlay">
+                            <div class="overlay-icon add-to-wishlist"><i class="fa-regular fa-heart"></i></div>
+                            <div class="overlay-icon add-to-cart" data-id="1" data-name="Dark Midnight Bar" data-price="12.99"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Dark Chocolate</p>
+                        <h3 class="product-name">Dark Midnight Bar</h3>
+                        <p class="product-price">$12.99</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="truffles">
+                    <div class="product-image-container">
+                        <img src="truffles.jpg" alt="Artisan Truffle Box" class="product-image">
+                        <div class="product-overlay">
+                            <div class="overlay-icon add-to-wishlist"><i class="fa-regular fa-heart"></i></div>
+                            <div class="overlay-icon add-to-cart" data-id="2" data-name="Artisan Truffle Box" data-price="24.99"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Gift Boxes</p>
+                        <h3 class="product-name">Artisan Truffle Box</h3>
+                        <p class="product-price">$24.99</p>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="luxury">
+                    <div class="product-image-container">
+                        <img src="hearts.jpg" alt="Velvet Heart Collection" class="product-image">
+                        <div class="product-overlay">
+                            <div class="overlay-icon add-to-wishlist"><i class="fa-regular fa-heart"></i></div>
+                            <div class="overlay-icon add-to-cart" data-id="3" data-name="Velvet Heart Collection" data-price="32.00"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Luxury Hearts</p>
+                        <h3 class="product-name">Velvet Heart Collection</h3>
+                        <p class="product-price">$32.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-preview" id="about">
+        <div class="about-image"></div>
+        <div class="container about-content">
+            <p class="subtitle">Our Story</p>
+            <h2 style="font-size: 3rem; margin-bottom: 20px;">A Passion for Perfection</h2>
+            <p style="margin-bottom: 30px; font-size: 1.1rem; color: var(--text-muted);">Founded on the belief that chocolate is more than just a treat—it's an experience. At Crave Filler, we meticulously select each cocoa bean and blend it with organic ingredients to create a symphony of flavors that dance on your palate.</p>
+            <p style="margin-bottom: 40px; font-size: 1.1rem; color: var(--text-muted);">From our kitchen to your hands, every piece is a labor of love, designed to fill your cravings and elevate your senses.</p>
+            <a href="#" class="btn btn-primary" style="background: var(--caramel-light); border-color: var(--caramel-light); color: var(--cocoa-dark);">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Shop Grid Section -->
+    <section class="section" id="shop">
+        <div class="container">
+            <div class="section-title">
+                <p class="subtitle">Explore</p>
+                <h2>Full Collection</h2>
+            </div>
+
+            <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 50px; flex-wrap: wrap;">
+                <button class="filter-btn active" data-filter="all" style="padding: 10px 25px; border: 1px solid var(--cocoa-dark); background: none; cursor: pointer; font-family: inherit; transition: var(--transition-quick);">All</button>
+                <button class="filter-btn" data-filter="dark" style="padding: 10px 25px; border: 1px solid #eee; background: none; cursor: pointer; font-family: inherit; transition: var(--transition-quick);">Dark</button>
+                <button class="filter-btn" data-filter="milk" style="padding: 10px 25px; border: 1px solid #eee; background: none; cursor: pointer; font-family: inherit; transition: var(--transition-quick);">Milk</button>
+                <button class="filter-btn" data-filter="truffles" style="padding: 10px 25px; border: 1px solid #eee; background: none; cursor: pointer; font-family: inherit; transition: var(--transition-quick);">Truffles</button>
+                <button class="filter-btn" data-filter="luxury" style="padding: 10px 25px; border: 1px solid #eee; background: none; cursor: pointer; font-family: inherit; transition: var(--transition-quick);">Gift Boxes</button>
+            </div>
+            
+            <div class="product-grid">
+                <!-- More products can be added here -->
+                 <!-- Product 4 -->
+                 <div class="product-card" data-category="milk">
+                    <div class="product-image-container">
+                        <img src="collage.jpg" alt="Caramel Swirl Delight" class="product-image">
+                        <div class="product-overlay">
+                            <div class="overlay-icon add-to-wishlist"><i class="fa-regular fa-heart"></i></div>
+                            <div class="overlay-icon add-to-cart" data-id="4" data-name="Caramel Swirl Delight" data-price="15.50"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Milk Chocolate</p>
+                        <h3 class="product-name">Caramel Swirl Delight</h3>
+                        <p class="product-price">$15.50</p>
+                    </div>
+                </div>
+
+                <!-- Repeated products for variety in shop view -->
+                <div class="product-card" data-category="dark">
+                    <div class="product-image-container">
+                        <img src="bars.jpg" alt="Sea Salt Dark" class="product-image">
+                        <div class="product-overlay">
+                            <div class="overlay-icon add-to-wishlist"><i class="fa-regular fa-heart"></i></div>
+                            <div class="overlay-icon add-to-cart" data-id="5" data-name="Sea Salt Dark" data-price="13.99"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Dark Chocolate</p>
+                        <h3 class="product-name">Sea Salt Dark</h3>
+                        <p class="product-price">$13.99</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="truffles">
+                    <div class="product-image-container">
+                        <img src="truffles.jpg" alt="Golden Berry Truffles" class="product-image">
+                        <div class="product-overlay">
+                            <div class="overlay-icon add-to-wishlist"><i class="fa-regular fa-heart"></i></div>
+                            <div class="overlay-icon add-to-cart" data-id="6" data-name="Golden Berry Truffles" data-price="28.00"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Truffles</p>
+                        <h3 class="product-name">Golden Berry Truffles</h3>
+                        <p class="product-price">$28.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="reviews" style="background: var(--white);">
+        <div class="container">
+            <div class="section-title">
+                <p class="subtitle">Voices of Indulgence</p>
+                <h2>What Our Connoisseurs Say</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div style="padding: 40px; background: var(--cream); border-radius: 5px;">
+                    <div style="color: var(--caramel); margin-bottom: 20px;">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p style="font-style: italic; margin-bottom: 20px;">"The Velvet Heart Collection was a revelation. I've never tasted chocolate so smooth and perfectly balanced."</p>
+                    <p style="font-weight: 600;">— Sophia Laurent</p>
+                </div>
+                <div style="padding: 40px; background: var(--cream); border-radius: 5px;">
+                    <div style="color: var(--caramel); margin-bottom: 20px;">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p style="font-style: italic; margin-bottom: 20px;">"Crave Filler is my go-to for gifts. The packaging is just as exquisite as the chocolate itself."</p>
+                    <p style="font-weight: 600;">— James Montgomery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact-us">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                <div>
+                    <p class="subtitle">Get In Touch</p>
+                    <h2 style="font-size: 3rem; margin-bottom: 20px;">We'd Love to Hear From You</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 40px;">Whether you have a question about our chocolates, shipping, or just want to share your sweet experience, our team is here to help.</p>
+                    
+                    <div style="display: flex; gap: 20px; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: var(--cream); display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--caramel);">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">Visit Us</h4>
+                            <p style="color: var(--text-muted);">123 Cocoa Lane, Sweetville, NY 10001</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 20px;">
+                        <div style="width: 50px; height: 50px; background: var(--cream); display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--caramel);">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">Call Us</h4>
+                            <p style="color: var(--text-muted);">+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="background: var(--white); padding: 50px; box-shadow: 0 30px 60px rgba(0,0,0,0.05);">
+                    <form action="#" style="display: grid; gap: 20px;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <input type="text" placeholder="First Name" style="padding: 15px; border: 1px solid #eee; font-family: inherit;" required>
+                            <input type="text" placeholder="Last Name" style="padding: 15px; border: 1px solid #eee; font-family: inherit;" required>
+                        </div>
+                        <input type="email" placeholder="Email Address" style="padding: 15px; border: 1px solid #eee; font-family: inherit;" required>
+                        <textarea placeholder="Your Message" rows="5" style="padding: 15px; border: 1px solid #eee; font-family: inherit;" required></textarea>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h2 class="footer-logo">CRAVE FILLER</h2>
+                    <p class="footer-text">Crafting moments of pure joy through the art of luxury chocolate. Experience the ultimate craving fulfillment.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#shop">Shop All</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-text">Subscribe to receive sweet updates and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Crave Filler Luxury Chocolates. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar (Hidden by default) -->
+    <div id="cart-drawer" style="position: fixed; top: 0; right: -100%; width: 400px; height: 100vh; background: var(--white); z-index: 2000; box-shadow: -10px 0 30px rgba(0,0,0,0.1); transition: var(--transition-smooth); padding: 40px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;">
+            <h2 style="font-size: 1.8rem;">Your Cart</h2>
+            <i class="fa-solid fa-xmark close-cart" style="cursor: pointer; font-size: 1.5rem;"></i>
+        </div>
+        <div id="cart-items" style="height: 60%; overflow-y: auto;">
+            <!-- Cart items will be injected here -->
+            <p style="text-align: center; color: var(--text-muted); margin-top: 50px;">Your cart is currently empty.</p>
+        </div>
+        <div style="position: absolute; bottom: 40px; left: 40px; right: 40px;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: 600; font-size: 1.2rem;">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="btn btn-primary" style="width: 100%;" onclick="alert('Proceeding to Checkout...')">Checkout</button>
+        </div>
+    </div>
+    <div id="cart-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1999; display: none;"></div>
+
+    <!-- Product Modal -->
+    <div id="product-modal" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0.9); width: 90%; max-width: 1000px; background: var(--white); z-index: 3000; display: none; opacity: 0; transition: var(--transition-smooth); box-shadow: 0 50px 100px rgba(0,0,0,0.2);">
+        <i class="fa-solid fa-xmark close-modal" style="position: absolute; top: 20px; right: 20px; font-size: 1.5rem; cursor: pointer; z-index: 10;"></i>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; height: 100%;">
+            <div id="modal-image" style="height: 600px; background-size: cover; background-position: center;"></div>
+            <div style="padding: 60px; display: flex; flex-direction: column; justify-content: center;">
+                <p id="modal-category" class="subtitle" style="margin-bottom: 10px;"></p>
+                <h2 id="modal-name" style="font-size: 2.5rem; margin-bottom: 20px;"></h2>
+                <p id="modal-price" style="font-size: 1.5rem; color: var(--caramel); font-weight: 600; margin-bottom: 20px;"></p>
+                <p id="modal-desc" style="color: var(--text-muted); margin-bottom: 40px;"></p>
+                
+                <div style="display: flex; gap: 20px; margin-bottom: 40px;">
+                    <div style="display: flex; align-items: center; border: 1px solid #eee; padding: 10px 20px;">
+                        <span style="cursor: pointer;">-</span>
+                        <span style="margin: 0 20px;">1</span>
+                        <span style="cursor: pointer;">+</span>
+                    </div>
+                    <button class="btn btn-primary" id="modal-add-btn" style="flex: 1;">Add to Cart</button>
+                </div>
+                
+                <div style="border-top: 1px solid #eee; padding-top: 20px; font-size: 0.9rem; color: var(--text-muted);">
+                    <p style="margin-bottom: 10px;"><i class="fa-solid fa-truck-fast" style="margin-right: 10px;"></i> Free shipping on orders over $50</p>
+                    <p><i class="fa-solid fa-leaf" style="margin-right: 10px;"></i> 100% Organic & Sustainably Sourced</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
